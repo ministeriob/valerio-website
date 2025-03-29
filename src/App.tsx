@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import {
   ChefHat,
@@ -13,12 +13,55 @@ import {
 } from "lucide-react";
 import { LanguageSelector } from "./components/LanguageSelector";
 import { Menu } from "./components/Menu";
+import SEO from "./components/SEO";
+import { pageSeoConfig } from "./lib/seo-config";
 
 function App() {
   const { t } = useTranslation();
+  const [activeSection, setActiveSection] = useState<
+    "home" | "about" | "services" | "menu" | "contact"
+  >("home");
+
+  // Set up intersection observer to track the active section
+  useEffect(() => {
+    const sections = ["about", "services", "gallery", "menu", "contact"];
+    const observers: IntersectionObserver[] = [];
+
+    // Clean up function to disconnect all observers
+    const cleanUp = () => {
+      observers.forEach((observer) => observer.disconnect());
+    };
+
+    // Set up an observer for each section
+    sections.forEach((section) => {
+      const element = document.getElementById(section);
+      if (!element) return;
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              setActiveSection(section as any);
+            }
+          });
+        },
+        { threshold: 0.3 } // Trigger when 30% of the element is visible
+      );
+
+      observer.observe(element);
+      observers.push(observer);
+    });
+
+    return cleanUp;
+  }, []);
 
   return (
     <div className="min-h-screen bg-coconut font-sans">
+      <SEO
+        section={activeSection}
+        title={pageSeoConfig[activeSection]?.title}
+        description={pageSeoConfig[activeSection]?.description}
+      />
       <LanguageSelector />
 
       {/* Hero Section */}
