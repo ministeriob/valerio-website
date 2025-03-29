@@ -1,0 +1,37 @@
+{
+  "hero": {
+    "subtitle": "Arte Culinária Brasileira em Paris"
+  },
+  "about": {
+    "title": "Sobre o Chef Valerio",
+    "bio1": "Nascido no Rio de Janeiro e formado nas melhores escolas culinárias de São Paulo, o Chef Valerio Carlos traz os sabores vibrantes do Brasil para os paladares sofisticados de Paris. Com mais de 15 anos de experiência em restaurantes prestigiados da América do Sul e Europa, agora oferece serviços exclusivos de catering e chef particular em Paris.",
+    "bio2": "Sua culinária é uma fusão única de receitas tradicionais brasileiras e técnicas culinárias francesas, criando uma experiência gastronômica inesquecível que conta uma história em cada prato."
+  },
+  "services": {
+    "title": "Nossos Serviços",
+    "subtitle": "Experiências culinárias excepcionais para seus momentos especiais",
+    "private": {
+      "title": "Chef Particular",
+      "description": "Desfrute de uma refeição de restaurante no conforto da sua casa. Menus personalizados de acordo com suas preferências e restrições alimentares."
+    },
+    "catering": {
+      "title": "Serviço de Catering",
+      "description": "De encontros íntimos a grandes celebrações, oferecemos um serviço completo de catering com atenção impecável aos detalhes."
+    }
+  },
+  "gallery": {
+    "title": "Galeria Culinária"
+  },
+  "menu": {
+    "title": "Cardápio"
+  },
+  "contact": {
+    "title": "Contato",
+    "form": {
+      "name": "Seu Nome",
+      "email": "Seu Email",
+      "message": "Sua Mensagem",
+      "submit": "Enviar Mensagem"
+    }
+  }
+}

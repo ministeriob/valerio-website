@@ -1,0 +1,37 @@
+{
+  "hero": {
+    "subtitle": "L'Art Culinaire Brésilien à Paris"
+  },
+  "about": {
+    "title": "À propos du Chef Valerio",
+    "bio1": "Né à Rio de Janeiro et formé dans les meilleures écoles culinaires de São Paulo, le Chef Valerio Carlos apporte les saveurs vibrantes du Brésil aux palais sophistiqués de Paris. Avec plus de 15 ans d'expérience dans des restaurants prestigieux d'Amérique du Sud et d'Europe, il propose désormais des services exclusifs de traiteur et de chef à domicile à Paris.",
+    "bio2": "Sa cuisine est une fusion unique de recettes traditionnelles brésiliennes et de techniques culinaires françaises, créant une expérience gastronomique inoubliable qui raconte une histoire à chaque plat."
+  },
+  "services": {
+    "title": "Nos Services",
+    "subtitle": "Des expériences culinaires exceptionnelles pour vos moments spéciaux",
+    "private": {
+      "title": "Chef à Domicile",
+      "description": "Profitez d'une cuisine de restaurant dans le confort de votre maison. Menus personnalisés selon vos préférences et exigences alimentaires."
+    },
+    "catering": {
+      "title": "Service Traiteur",
+      "description": "Des réunions intimes aux grandes célébrations, nous assurons un service traiteur complet avec une attention impeccable aux détails."
+    }
+  },
+  "gallery": {
+    "title": "Galerie Culinaire"
+  },
+  "menu": {
+    "title": "Menu"
+  },
+  "contact": {
+    "title": "Contact",
+    "form": {
+      "name": "Votre Nom",
+      "email": "Votre Email",
+      "message": "Votre Message",
+      "submit": "Envoyer"
+    }
+  }
+}
